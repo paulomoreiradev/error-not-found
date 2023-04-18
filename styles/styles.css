@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+:root {
+    --fonte-primaria: 'Space Mono', monospace;
+    --fonte-secundaria: 'Inconsolata', monospace;
+    --fonte-terciaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho{
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-left: 3%;
+    gap: 50px;
+}
+.img {
+    display: flex;
+    justify-content: center;
+}
+.espantalho {
+    width: 80%;
+    height: auto;
+}
+.conteudo__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 48px;
+    font-weight: 700;
+    /* padding: 3%; */
+}
+.text {
+    font-family: var(--fonte-primaria);
+    font-size: 18px;
+    font-weight: 400;
+    /* padding: 3%; */
+}
+.link__home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-primaria);
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #333333;
+    width: 216px;
+    height: 68px;
+}
+.rodape {
+    text-align: center;
+    color: #BDBDBD;
+    padding-top: 30%;
+    padding-bottom: 6%;
+}
+.meulink {
+    font-family: var(--fonte-terciaria);
+    font-size: 14px;
+    text-decoration: none;
+    color: #BDBDBD;
+}
+
+@media (min-width : 1200px)
+{   
+    .cabecalho {
+        padding-top:2%;
+        padding-bottom: 10%;
+
+    }
+    .apresentacao{
+        flex-direction: row;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .rodape {
+        padding-top: 10%;
+        padding-bottom: 2%;
+    }
+}
